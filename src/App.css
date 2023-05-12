@@ -1,0 +1,40 @@
+.bg-gold {
+  background-color: #f8d57e;
+}
+
+.btn-gold {
+  color: #2c2543;
+  background: #f8d57e;
+  font-weight: bold;
+}
+
+.btn-gold:hover {
+  color: #2c2543;
+  background: #dfc072;
+}
+
+.task-img {
+  border-radius: 110px 50px 70px 54px;
+  -webkit-border-radius: 110px 50px 70px 54px;
+  -moz-border-radius: 110px 50px 70px 54px;
+  -ms-border-radius: 110px 50px 70px 54px;
+  -o-border-radius: 110px 50px 70px 54px;
+}
+
+.cardtask {
+  background-color: #f6f7fb;
+  border-radius: 25px !important;
+  -webkit-border-radius: 25px !important;
+  -moz-border-radius: 25px !important;
+  -ms-border-radius: 25px !important;
+  -o-border-radius: 25px !important;
+}
+
+.form-switch .form-check-input {
+  width: 4em !important;
+  height: 2em !important;
+}
+
+.cpt {
+  cursor: pointer;
+}
