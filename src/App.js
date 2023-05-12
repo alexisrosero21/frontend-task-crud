@@ -11,7 +11,6 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import axios from "axios"
 import Swal from "sweetalert2"
 import "./App.css"
-import { baseURL } from "./utils/constant"
 
 import {
   Button,
@@ -32,13 +31,11 @@ moment.tz.setDefault("America/Bogota")
 const localizer = momentLocalizer(moment)
 
 const App = () => {
+  const baseURL = process.env.REACT_APP_BASE_URL
   const [tasks, setTasks] = useState([])
-
   const [isLoading, setIsLoading] = useState(false)
   const [options, setOptions] = useState([])
-
   const [showTask, setShowTask] = useState(false)
-
   const [id, setId] = useState()
   const [title, setTitle] = useState()
   const [description, setDescription] = useState()
@@ -286,8 +283,8 @@ const App = () => {
           <div className="d-flex justify-content-between  p-2">
             <h1>Tareas</h1>
 
-            <a variant="btn-sm " onClick={handlerCreateTask}>
-              <img src={btnadd} width="50%" className="task-img" alt="" />
+            <a href="#" variant="btn-sm " onClick={handlerCreateTask}>
+              <img src={btnadd} width="50%" className="task-img" alt="boton agregar" />
             </a>
           </div>
 
@@ -296,6 +293,7 @@ const App = () => {
               {tasks.map((task) => {
                 return (
                   <a
+                    href="#"
                     style={task.status ? { backgroundColor: "#f8d57e" } : {}}
                     className={` cpt list-group-item list-group-item-action d-flex gap-3 py-3 mb-2 rounded border cardtask ${
                       status ? "cardbg-gold" : ""
@@ -316,7 +314,7 @@ const App = () => {
                       </div>
                       <small className=" text-nowrap">
                         {task.time} <space></space>
-                        <a onClick={(e) => handlerDeleteTask(task._id)}>
+                        <a href="#" onClick={(e) => handlerDeleteTask(task._id)}>
                           <FaTrashAlt />
                         </a>
                       </small>
@@ -346,7 +344,7 @@ const App = () => {
               className="d-flex justify-content-center align-content-center p-2"
             >
               <div className="mx-auto my-auto text-center">
-                <img width="100%" src={imgadd}></img>
+                <img width="100%" src={imgadd} alt="wawd"></img>
               </div>
             </Col>
             <Col className="p-2">
