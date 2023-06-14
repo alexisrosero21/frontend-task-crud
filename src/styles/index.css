@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Gilroy-Medium, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* overflow: auto; */
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+body,
+html {
+  height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: calc(2rem - 0.14285714em) 0 1rem;
+  padding: 0;
+}
+
+input[type="color"] {
+  outline: none;
+  border: none;
+  border-color: transparent;
+  transform: scale(1.5);
+}
+
+input[type="color"]:focus {
+  outline: none;
+  border: none;
+  border-color: transparent;
+}
+
+textarea {
+  line-height: 1.21428571em;
+  padding: 0.67857143em 1em;
+  font-size: 1em;
+  background: #fff;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  color: rgba(0, 0, 0, 0.87);
+  border-radius: 0.28571429rem;
+  box-shadow: 0 0 0 0 transparent inset;
+  height: 75px;
+  /* width: 200px; */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="password"],
+select {
+  line-height: 1.21428571em;
+  padding: 0.67857143em 1em;
+  font-size: 1em;
+  background: #fff;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  color: rgba(0, 0, 0, 0.87);
+  border-radius: 20px;
+  box-shadow: 0 0 0 0 transparent inset;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border: 1px solid #ffd15d;
+}
+
+.loading {
+  margin-top: 400px;
+  margin-left: 700px;
+}

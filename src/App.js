@@ -314,8 +314,12 @@ const App = () => {
                       </div>
                       <small className=" text-nowrap">
                         {task.time} <space></space>
-                        <a href="#" onClick={(e) => handlerDeleteTask(task._id)}>
-                          <FaTrashAlt />
+                        <a
+                          href="#"
+                          className="text-secondary"
+                          onClick={(e) => handlerDeleteTask(task._id)}
+                        >
+                          <FaTrashAlt className="primary" />
                         </a>
                       </small>
                     </div>
